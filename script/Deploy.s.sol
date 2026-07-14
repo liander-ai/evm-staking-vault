@@ -31,9 +31,7 @@ contract Deploy is Script {
         DemoToken stakeToken = new DemoToken("Demo Stake", "dSTK");
         DemoToken rewardToken = new DemoToken("Demo Reward", "dRWD");
 
-        StakingVault vault = new StakingVault(
-            IERC20(address(stakeToken)), IERC20(address(rewardToken)), REWARD_RATE
-        );
+        StakingVault vault = new StakingVault(IERC20(address(stakeToken)), IERC20(address(rewardToken)), REWARD_RATE);
 
         // Fund the reward pool with 1,000,000 reward tokens.
         rewardToken.mint(me, 1_000_000 ether);
