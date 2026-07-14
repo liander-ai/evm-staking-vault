@@ -92,7 +92,7 @@ npm run interact
 - **Solidity** `^0.8.24` (compiled with 0.8.28)
 - **Foundry** (forge / anvil / cast) for build, test, and deploy
 - **OpenZeppelin Contracts** v5 (`SafeERC20`, `ERC20`)
-- **viem** for typed client-side interaction
+- **viem** for typed client-side interaction (`scripts/interact.mjs`), with an **ethers.js** read client too (`scripts/interact-ethers.mjs`, run `npm run read:ethers`)
 
 ## Layout
 

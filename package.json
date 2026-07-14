@@ -5,9 +5,11 @@
   "type": "module",
   "description": "Viem scripts to interact with the StakingVault contract",
   "scripts": {
-    "interact": "node scripts/interact.mjs"
+    "interact": "node scripts/interact.mjs",
+    "read:ethers": "node scripts/interact-ethers.mjs"
   },
   "dependencies": {
+    "ethers": "^6.17.0",
     "viem": "^2.21.0"
   }
 }
