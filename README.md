@@ -4,6 +4,16 @@ A token staking vault with linear, time-based rewards, written in Solidity and t
 
 This is the **EVM/Solidity port of the same protocol I built on Solana with Anchor** ([`anchor-staking-rewards`](https://github.com/liander-ai/anchor-staking-rewards)). Same mechanics, two very different runtimes: an Anchor program in Rust on Solana, and a Solidity contract on the EVM. Building it twice is the point, the reward accounting and settlement rules are identical, only the platform primitives change.
 
+## Live on Sepolia
+
+Deployed and exercised on the Ethereum Sepolia testnet (a real `stake` transaction was executed via the viem script):
+
+| Contract | Address |
+| --- | --- |
+| StakingVault | [`0x5be7F333d78e81e364e040DaAB31D4435B255B95`](https://sepolia.etherscan.io/address/0x5be7F333d78e81e364e040DaAB31D4435B255B95) |
+| Stake token | [`0x64Bf6CdBfDF68E4Ea65E926d215707739f6eF5E0`](https://sepolia.etherscan.io/address/0x64Bf6CdBfDF68E4Ea65E926d215707739f6eF5E0) |
+| Reward token | [`0x2eea1CffCB4f1bb07Ee97bAC6F5804AbE87DA3b5`](https://sepolia.etherscan.io/address/0x2eea1CffCB4f1bb07Ee97bAC6F5804AbE87DA3b5) |
+
 ## What it does
 
 Users stake an ERC-20 token into the vault and accrue a second ERC-20 reward token over time:
